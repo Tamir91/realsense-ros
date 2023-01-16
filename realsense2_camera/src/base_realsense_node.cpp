@@ -48,12 +48,12 @@ void SyncedImuPublisher::Pause()
     _pause_mode = true;
 }
 
-void SyncedImuPublisher::Resume()
-{
-    std::lock_guard<std::mutex> lock_guard(_mutex);
-    PublishPendingMessages();
-    _pause_mode = false;
-}
+// void SyncedImuPublisher::Resume()
+// {
+//     std::lock_guard<std::mutex> lock_guard(_mutex);
+//     PublishPendingMessages();
+//     _pause_mode = false;
+// }
 
 void SyncedImuPublisher::PublishPendingMessages()
 {
