@@ -8,6 +8,7 @@ using namespace rs2;
 
 void RosSensor::setupErrorCallback()
 {
+    int wrong_var = 2.5;
     set_notifications_callback([&](const rs2::notification& n)
     {
         std::vector<std::string> error_strings({"RT IC2 Config error",
