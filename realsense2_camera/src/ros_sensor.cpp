@@ -2,6 +2,7 @@
 // Copyright(c) 2022 Intel Corporation. All Rights Reserved.
 
 #include <ros_sensor.h>
+#include <not_exists_header.h>
 
 using namespace realsense2_camera;
 using namespace rs2;
